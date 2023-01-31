@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;1,700&display=swap');
 
-body {
+.body {
+    overflow-x: hidden;
     background: hsl(0, 0%, 98%);
     font-family: 'Epilogue', sans-serif;
+}
+
+.geral2 {
+    filter: blur(5px);
 }
 
 .menu {
@@ -20,12 +26,7 @@ body {
     bottom: 94%;
     left: 200px;
     color: hsl(0, 0%, 41%);
-}
-
-.arrow-down {
-    position: absolute;
-    bottom: 30%;
-    left: 80px;
+    transition: .1s ease-in-out;
 }
 
 .company {
@@ -33,6 +34,7 @@ body {
     bottom: 94%;
     left: 330px;
     color: hsl(0, 0%, 41%);
+    transition: .1s ease-in-out;
 }
 
 .careers {
@@ -40,6 +42,7 @@ body {
     bottom: 94%;
     left: 460px;
     color: hsl(0, 0%, 41%);
+    transition: .1s ease-in-out;
 }
 
 .about {
@@ -47,6 +50,7 @@ body {
     bottom: 94%;
     left: 570px;
     color: hsl(0, 0%, 41%);
+    transition: .1s ease-in-out;
 }
 
 .login {
@@ -61,6 +65,7 @@ body {
     font-size: 17px;
     cursor: pointer;
     color: hsl(0, 0%, 41%);
+    transition: .1s ease-in-out;
 }
 
 .register {
@@ -74,6 +79,38 @@ body {
     background: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 41%);
     font-size: 17px;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.register:hover {
+    color: hsl(0, 0%, 8%);
+    transition: .1s ease-in-out;
+}
+
+.login:hover {
+    color: hsl(0, 0%, 8%);
+    transition: .1s ease-in-out;
+}
+
+.about:hover {
+    color: hsl(0, 0%, 8%);
+    transition: .1s ease-in-out;
+}
+
+.careers:hover {
+    color: hsl(0, 0%, 8%);
+    transition: .1s ease-in-out;
+}
+
+.company:hover {
+    color: hsl(0, 0%, 8%);
+    transition: .1s ease-in-out;
+}
+
+.features:hover {
+    color: hsl(0, 0%, 8%);
+    transition: .1s ease-in-out;
 }
 
 .big {
@@ -83,10 +120,1046 @@ body {
     height: 600px;
 }
 
+.small {
+    position: absolute;
+    display: none;
+}
+
 .make {
     position: absolute;
     font-weight: 700;
     font-size: 70px;
     bottom: 50%;
     left: 14%;
+    display: block;
 }
+
+.make2 {
+    position: absolute;
+    font-weight: 700;
+    font-size: 34px;
+    bottom: 50%;
+    left: 14%;
+    display: none;
+}
+
+.text {
+    font-weight: 400;
+    position: absolute;
+    color: hsl(0, 0%, 41%);
+    bottom: 35%;
+    left: 14%;
+    font-size: 16px;
+    display: block;
+}
+
+.text2 {
+    display: none;
+}
+
+.learnMore {
+    cursor: pointer;
+    background: black;
+    color: hsl(0, 0%, 98%);
+    border: none;
+    border-radius: 13px;
+    height: 45px;
+    width: 140px;
+    position: absolute;
+    bottom: 25%;
+    left: 14%;
+    font-size: 17px;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+
+.learnMore:hover {
+    border: black solid 1px;
+    background: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    transition: .2s ease-in-out;
+}
+
+.logo1 {
+    position: absolute;
+    bottom: 10%;
+    left: 14%;
+    height: 18px;
+}
+
+.logo2 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+}
+
+.logo3 {
+    height: 18px;
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
+}
+
+.logo4 {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+.features-extension {
+    background: hsl(0, 0%, 98%);
+    box-shadow: 5px 5px 100px rgba(0,0,0,0.1);
+    height: 160px;
+    width: 160px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 70%;
+    left: 9.5%;
+    visibility: hidden;
+}
+
+.list {
+    position: absolute;
+    bottom: 74%;
+    left: 13%;
+}
+
+.list2 {
+    position: absolute;
+    color: hsl(0, 0%, 41%);
+    font-size: 16px;
+    bottom: 62%;
+    left: 30%;
+}
+
+.list2:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.calendar {
+    position: absolute;
+    bottom: 53%;
+    left: 13%;
+}
+
+.calendar2 {
+    position: absolute;
+    color: hsl(0, 0%, 41%);
+    font-size: 16px;
+    bottom: 41%;
+    left: 30%;
+}
+
+.calendar2:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.reminders {
+    position: absolute;
+    bottom: 33%;
+    left: 13%;
+}
+
+.reminders2 {
+    position: absolute;
+    color: hsl(0, 0%, 41%);
+    font-size: 16px;
+    bottom: 22%;
+    left: 30%;
+}
+
+.reminders2:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.planning {
+    position: absolute;
+    bottom: 13%;
+    left: 13%;
+}
+
+.planning2 {
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+    color: hsl(0, 0%, 41%);
+}
+
+.planning2:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.features-extension2 {
+    visibility: visible;
+    background: hsl(0, 0%, 98%);
+    box-shadow: 5px 5px 100px rgba(0,0,0,0.1);
+    height: 160px;
+    width: 160px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 70%;
+    left: 9.5%;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 30%;
+    left: 80px;
+}
+
+.arrow {
+    visibility: visible;
+    position: absolute;
+    bottom: 30%;
+}
+
+.arrow1 {
+    visibility: hidden;
+    position: absolute;
+    bottom: 30%;
+}
+
+.arrow1-1 {
+    visibility: hidden;
+    position: absolute;
+    bottom: 30%;
+}
+
+.arrow1-2 {
+    visibility: visible;
+    position: absolute;
+    bottom: 30%;
+}
+
+.company-extension {
+    visibility: hidden;
+    background: hsl(0, 0%, 98%);
+    box-shadow: 5px 5px 100px rgba(0,0,0,0.1);
+    height: 130px;
+    width: 120px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -900%;
+    left: -10%;
+}
+
+.company-extension2 {
+    visibility: visible;
+    background: hsl(0, 0%, 98%);
+    box-shadow: 5px 5px 100px rgba(0,0,0,0.1);
+    height: 130px;
+    width: 120px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -900%;
+    left: -10%;
+}
+
+.history {
+    font-size: 14px;
+    position: absolute;
+    bottom: 60%;
+    left: 29%;
+    color: hsl(0, 0%, 41%);
+}
+
+.history2 {
+    font-size: 14px;
+    position: absolute;
+    bottom: 60%;
+    left: 29%;
+    color: hsl(0, 0%, 41%);
+}
+
+.history:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.blog {
+    position: absolute;
+    bottom: 2%;
+    font-size: 14px;
+    left: 32%;
+    color: hsl(0, 0%, 41%);
+}
+
+.blog:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.our {
+    position: absolute;
+    bottom: 30%;
+    font-size: 14px;
+    left: 21%;
+    color: hsl(0, 0%, 41%);
+}
+
+.our:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.arrow2 {
+    visibility: visible;
+    position: absolute;
+    bottom: 30%;
+}
+
+.arrow3 {
+    visibility: hidden;
+    position: absolute;
+    bottom: 30%;
+}
+
+.arrow2-2 {
+    visibility: hidden;
+    position: absolute;
+    bottom: 30%;
+}
+
+.arrow2-3 {
+    visibility: visible;
+    position: absolute;
+    bottom: 30%;
+}
+
+@media(min-width:120px) and (max-width: 800px){
+    body {
+        min-height: 100vh;
+        min-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .snap {
+        position: absolute;
+        bottom: 93%;
+        left: 20px;
+    }
+    
+    .features {
+        position: absolute;
+        bottom: 94%;
+        left: 200px;
+        color: hsl(0, 0%, 41%);
+        transition: .1s ease-in-out;
+        display: none;
+    }
+    
+    .company {
+        position: absolute;
+        bottom: 94%;
+        left: 330px;
+        color: hsl(0, 0%, 41%);
+        transition: .1s ease-in-out;
+        display: none;
+    }
+    
+    .careers {
+        position: absolute;
+        bottom: 94%;
+        left: 460px;
+        color: hsl(0, 0%, 41%);
+        transition: .1s ease-in-out;
+        display: none;
+    }
+    
+    .about {
+        position: absolute;
+        bottom: 94%;
+        left: 570px;
+        color: hsl(0, 0%, 41%);
+        transition: .1s ease-in-out;
+        display: none;
+    }
+    
+    .login {
+        position: absolute;
+        border: none;
+        border-radius: 30px;
+        background:hsl(0, 0%, 98%);
+        height: 40px;
+        width: 60px;
+        bottom: 93%;
+        left: 86%;
+        font-size: 17px;
+        cursor: pointer;
+        color: hsl(0, 0%, 41%);
+        transition: .1s ease-in-out;
+        display: none;
+    }
+    
+    .register {
+        border-radius: 15px;
+        border: black solid 1px;
+        height: 40px;
+        width: 90px;
+        position: absolute;
+        bottom: 93%;
+        left: 92%;
+        background: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 41%);
+        font-size: 17px;
+        transition: .1s ease-in-out;
+        cursor: pointer;
+        display: none;
+    }
+
+
+    .big {
+        position: absolute;
+        bottom: 9%;
+        left: 5%;
+        height: 400px;
+        display: none;
+    }
+
+    .divSmall {
+        left: -8px;
+        bottom: -70px;
+        width: 100%;
+        height: 40%;
+        position: relative;
+    }
+
+    .small {
+        display: block;
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    
+    .make {
+        position: absolute;
+        font-weight: 700;
+        font-size: 70px;
+        bottom: 50%;
+        left: 14%;
+        word-wrap: break-word;
+        display: none;
+    }
+
+    .make2 {
+        position: relative;
+        font-weight: 700;
+        font-size: 32px;
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+        bottom: 36%;
+        text-align: center;
+        left: 0px;
+        justify-content: center;
+    }
+
+    .make-mobile {
+        left: -10px;
+        position: relative;
+        bottom: -60px;
+        width: 100vw;
+    }    
+    
+    .text {
+        font-weight: 400;
+        position: absolute;
+        color: hsl(0, 0%, 41%);
+        bottom: 5%;
+        left: 14%;
+        font-size: 16px;
+        display: none;
+    }
+
+    .text2 {
+        text-align: center;
+        display: block;
+        font-weight: 400;
+        position: relative;
+        color: hsl(0, 0%, 41%);
+        bottom: -10px;
+        left: 0px;
+        font-size: 18px;
+        justify-content: center;
+        
+    }
+    
+    .text-mobile {
+        position: relative;
+        height: 90px;
+        bottom: -60px;
+        width: 100%;
+        left: -8px;
+    }
+
+    .learnMore {
+        cursor: pointer;
+        background: black;
+        color: hsl(0, 0%, 98%);
+        border: none;
+        border-radius: 13px;
+        height: 45px;
+        width: 140px;
+        position: relative;
+        bottom: -3px;
+        left: 0px;
+        font-size: 17px;
+        font-weight: 700;
+        transition: .2s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+    
+    .learnMore:hover {
+        border: black solid 1px;
+        background: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        transition: .2s ease-in-out;
+    }
+    
+    .learmore-mobile {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        height: 50px;
+        left: -8px;
+        bottom: -70px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .logos {
+        display: flex;
+        width: 100%;
+        background: green;
+        position: relative;
+        bottom: -130px;
+        left: -8px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        object-fit: cover;
+        height: 40px;
+        object-position: bottom;
+    }
+
+    .logo1 {
+        min-height: 20px;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        height: 18px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 9;
+    }
+    
+    .logo2 {
+        min-height: 29px;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .logo3 {
+        min-height: 20px;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .logo4 {
+        min-height: 20px;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-1 {
+        display: block;
+        width: 110px;
+        position: relative;
+        height: 30px;
+        bottom: -4px;
+        left: -40px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-2 {
+        display: block;
+        width: 76px;
+        position: relative;
+        height: 38px;
+        bottom: 0px;
+        left: -20px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .logo-3 {
+        display: block;
+        position: relative;
+        height: 38px;
+        bottom: -8px;
+        left: 0px;
+        width: 92px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-4 {
+        display: block;
+        position: relative;
+        height: 38px;
+        bottom: -6px;
+        left: 29px;
+        width: 90px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        
+
+    }
+
+    .features-extension {
+        background: hsl(0, 0%, 98%);
+        box-shadow: 5px 5px 100px rgba(0,0,0,0.1);
+        height: 160px;
+        width: 160px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 70%;
+        left: 9.5%;
+        visibility: hidden;
+    }
+    
+    .list {
+        position: absolute;
+        bottom: 74%;
+        left: 13%;
+    }
+    
+    .list2 {
+        position: absolute;
+        color: hsl(0, 0%, 41%);
+        font-size: 16px;
+        bottom: 62%;
+        left: 30%;
+    }
+    
+    .list2:hover {
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .calendar {
+        position: absolute;
+        bottom: 53%;
+        left: 13%;
+    }
+    
+    .calendar2 {
+        position: absolute;
+        color: hsl(0, 0%, 41%);
+        font-size: 16px;
+        bottom: 41%;
+        left: 30%;
+    }
+    
+    .calendar2:hover {
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .reminders {
+        position: absolute;
+        bottom: 33%;
+        left: 13%;
+    }
+    
+    .reminders2 {
+        position: absolute;
+        color: hsl(0, 0%, 41%);
+        font-size: 16px;
+        bottom: 22%;
+        left: 30%;
+    }
+    
+    .reminders2:hover {
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .planning {
+        position: absolute;
+        bottom: 13%;
+        left: 13%;
+    }
+    
+    .planning2 {
+        position: absolute;
+        bottom: 2%;
+        left: 30%;
+        color: hsl(0, 0%, 41%);
+    }
+    
+    .planning2:hover {
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .arrow-down {
+        position: absolute;
+        bottom: 30%;
+        left: 80px;
+    }
+    
+    .arrow {
+        visibility: visible;
+        position: absolute;
+        bottom: 30%;
+    }
+    
+    .arrow1 {
+        visibility: hidden;
+        position: absolute;
+        bottom: 30%;
+    }
+    
+    .arrow1-1 {
+        visibility: hidden;
+        position: absolute;
+        bottom: 30%;
+    }
+    
+    .arrow1-2 {
+        visibility: visible;
+        position: absolute;
+        bottom: 30%;
+    }
+    
+    .company-extension {
+        visibility: hidden;
+        background: hsl(0, 0%, 98%);
+        box-shadow: 5px 5px 100px rgba(0,0,0,0.1);
+        height: 130px;
+        width: 120px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -900%;
+        left: -10%;
+    }
+    
+    .company-extension2 {
+        visibility: visible;
+        background: hsl(0, 0%, 98%);
+        box-shadow: 5px 5px 100px rgba(0,0,0,0.1);
+        height: 130px;
+        width: 120px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -900%;
+        left: -10%;
+    }
+    
+    .history {
+        font-size: 14px;
+        position: absolute;
+        bottom: 60%;
+        left: 29%;
+        color: hsl(0, 0%, 41%);
+    }
+    
+    .history2 {
+        font-size: 14px;
+        position: absolute;
+        bottom: 60%;
+        left: 29%;
+        color: hsl(0, 0%, 41%);
+    }
+    
+    .history:hover {
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .blog {
+        position: absolute;
+        bottom: 2%;
+        font-size: 14px;
+        left: 32%;
+        color: hsl(0, 0%, 41%);
+    }
+    
+    .blog:hover {
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .our {
+        position: absolute;
+        bottom: 30%;
+        font-size: 14px;
+        left: 21%;
+        color: hsl(0, 0%, 41%);
+    }
+    
+    .our:hover {
+        color: hsl(0, 0%, 8%);
+    }
+
+    .tres-barra {
+        background: hsl(0, 0%, 98%);
+        height: 20px;
+        width: 30px;
+        position: absolute;
+        bottom: 93.5%;
+        left: 87%;
+        cursor: pointer;
+    }
+
+    .barra1 {
+        background: hsl(0, 0%, 8%);
+        height: 3px;
+        width: 35px;
+        position: absolute;
+        left: 0%;
+        bottom: 90%;
+        border-radius: 20px;
+        z-index: 9;
+        transition: .3s ease-in-out;
+    }
+
+    .barra1-e {
+        transform: translateY(9px) rotate(40deg);
+        background: hsl(0, 0%, 8%);
+        height: 3px;
+        width: 35px;
+        position: absolute;
+        left: 0%;
+        bottom: 90%;
+        border-radius: 20px;
+        z-index: 9;
+        transition: .3s ease-in-out;
+    }
+
+    .barra2 {
+        background: hsl(0, 0%, 8%);
+        height: 3px;
+        width: 35px;
+        position: absolute;
+        border-radius: 20px;
+        bottom: 45%;
+        left: 0%;
+        z-index: 9;
+        transition: .3s ease-in-out;
+    }
+
+    .barra2-e {
+        transform: scale(0);
+        background: hsl(0, 0%, 8%);
+        height: 3px;
+        width: 35px;
+        position: absolute;
+        border-radius: 20px;
+        bottom: 45%;
+        left: 0%;
+        z-index: 9;
+        transition: .3s ease-in-out;
+    }
+
+    .barra3 {
+        background: hsl(0, 0%, 8%);
+        height: 3px;
+        width: 35px;
+        position: absolute;
+        border-radius: 20px;
+        left: 0%;
+        bottom: 0%;
+        z-index: 9;
+        transition: .3s ease-in-out;
+    }
+
+    .barra3-e {
+        transform: translateY(-9px) rotate(-40deg);
+        background: hsl(0, 0%, 8%);
+        height: 3px;
+        width: 35px;
+        position: absolute;
+        border-radius: 20px;
+        left: 0%;
+        bottom: 0%;
+        z-index: 9;
+        transition: .3s ease-in-out;
+    }
+
+    .back {
+        right: 0%;
+        visibility: hidden; 
+        bottom: 0%;
+        background: pink;
+        height: 100%;
+        position: absolute;
+        width: 0px; 
+        transition: .3s ease-in-out;
+    }
+
+    .back2 {
+        visibility: visible;
+        right: 0%;
+        bottom: 0%;
+        background: pink;
+        height: 100%;
+        position: absolute;
+        width: 230px;
+        transition: .3s ease-in-out;
+    }
+    
+    .features2 {
+        color: hsl(0, 0%, 41%);
+        position: absolute;
+        bottom: 85%;
+        left: 10%;
+        cursor: pointer;
+    }
+
+    .arrow1-mobile {
+        visibility: visible;
+        position: absolute;
+        bottom: 4%;
+        left: 120%;
+    }
+
+    .arrow-mobile1 {
+        visibility: hidden;
+        position: absolute;
+        left: 120%;
+    }
+
+    .arrow1-1-mobile {
+        visibility: hidden;
+        position: absolute;
+        left: 120%;
+    }
+    
+    .arrow1-2-mobile {
+        visibility: visible;
+        position: absolute;
+        bottom: 4%;
+        left: 120%;
+    }
+
+
+
+    .features-extension-mobile {
+        visibility: hidden;
+        background: hsl(0, 0%, 98%);
+        height: 150px;
+        width: 160px;
+        border-radius: 10px;
+        position: relative;
+        bottom: -130px;
+        left: 13%;
+    }
+
+    .features-extension-mobile2 {
+        visibility: visible;
+        background: hsl(0, 0%, 98%);
+        height: 150px;
+        width: 160px;
+        border-radius: 10px;
+        position: relative;
+        bottom: -130px;
+        left: 13%;
+    }
+
+    .list-mobile {
+        position: absolute;
+        bottom: 90%;
+        left: 10%;
+    }
+
+    .list2-mobile {
+        color: hsl(0, 0%, 41%);
+        position: absolute;
+        bottom: 80%;
+        left: 26%;
+        cursor: pointer;
+    }
+
+    .calendar-mobile {
+        position: absolute;
+        bottom: 68%;
+        left: 10%;
+    }
+
+    .calendar2-mobile {
+        position: absolute;
+        bottom: 56%;
+        left: 26%;
+        color: hsl(0, 0%, 41%);
+        cursor: pointer;
+    }
+
+    .reminders-mobile {
+        position: absolute;
+        bottom: 45%;
+        left: 10%;
+    }
+
+    .reminders2-mobile {
+        color: hsl(0, 0%, 41%);
+        position: absolute;
+        bottom: 35%;
+        left: 26%;
+        cursor: pointer;
+    }
+
+    .planning-mobile {
+        position: absolute;
+        bottom: 23%;
+        left: 10%;
+    }
+
+    .planning2-mobile {
+        position: absolute;
+        bottom: 12%;
+        left: 26%;
+        color: hsl(0, 0%, 41%);
+        cursor: pointer;
+    }
+
+    .company2 {
+        display: grid;
+        background: gray;
+        color: hsl(0, 0%, 41%);
+        position: relative;
+        left: 23px;
+    }
+
+    .arrow-mobile2 {
+        position: absolute;
+        bottom: 20%;
+        left: 37%;
+    }
+
+}
+
+
