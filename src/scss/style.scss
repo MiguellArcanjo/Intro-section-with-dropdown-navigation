@@ -615,20 +615,24 @@
     .logos {
         display: flex;
         width: 100%;
-        background: green;
         position: relative;
         bottom: -130px;
-        left: -8px;
+        // left: -8px;
         justify-content: center;
         align-items: center;
         text-align: center;
         object-fit: cover;
         height: 40px;
         object-position: bottom;
+        left: auto;
+        min-width: 460px;
+        max-width: 800px;
+        box-sizing: border-box;
     }
 
     .logo1 {
         min-height: 20px;
+        max-height: 200px;
         position: relative;
         bottom: 0px;
         left: 0px;
@@ -649,10 +653,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        max-height: 200px;
     }
     
     .logo3 {
         min-height: 20px;
+        max-height: 200px;
         position: relative;
         bottom: 0px;
         left: 0px;
@@ -664,6 +670,7 @@
     
     .logo4 {
         min-height: 20px;
+        max-height: 200px;
         position: relative;
         bottom: 0px;
         left: 0px;
@@ -671,6 +678,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        min-width: 90px;
+        max-width: 100px;
+        object-position: center;
+        overflow: hidden;
+        box-sizing: border-box;
+    
     }
 
     .logo-1 {
@@ -678,6 +691,7 @@
         width: 110px;
         position: relative;
         height: 30px;
+        max-height: 200px;
         bottom: -4px;
         left: -40px;
         object-fit: cover;
@@ -691,6 +705,7 @@
         width: 76px;
         position: relative;
         height: 38px;
+        max-height: 200px;
         bottom: 0px;
         left: -20px;
         object-fit: cover;
@@ -703,6 +718,7 @@
         display: block;
         position: relative;
         height: 38px;
+        max-height: 200px;
         bottom: -8px;
         left: 0px;
         width: 92px;
@@ -716,6 +732,7 @@
         display: block;
         position: relative;
         height: 38px;
+        max-height: 200px;
         bottom: -6px;
         left: 29px;
         width: 90px;
@@ -723,9 +740,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
-        
-
+        min-width: 90px;
+        max-width: 100px;
+        box-sizing: border-box;
+        overflow: auto;
+        width: 30%;
     }
 
     .features-extension {
@@ -996,8 +1015,10 @@
     }
 
     .back {
+        overflow-x: hidden;
+        visibility: hidden;
         right: 0%;
-        visibility: hidden; 
+        // display: none; 
         bottom: 0%;
         background: hsl(0, 0%, 98%);
         height: 100%;
@@ -1007,6 +1028,8 @@
     }
 
     .back2 {
+        overflow-x: hidden;
+        display: block;
         visibility: visible;
         right: 0%;
         bottom: 0%;
