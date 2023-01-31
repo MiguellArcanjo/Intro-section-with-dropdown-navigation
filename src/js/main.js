@@ -10,10 +10,15 @@ const arrow2 = document.querySelector('.arrow2');
 const arrow2_2 = document.querySelector('.arrow2-2');
 const arrow_mobile = document.querySelector('.arrow1-mobile')
 const arrow1_mobile = document.querySelector('.arrow-mobile1')
+const arrow2_mobile = document.querySelector('.arrow-mobile2')
 const arrow1_1_mobile = document.querySelector('.arrow1-1-mobile')
 const arrow1_2_mobile = document.querySelector('.arrow1-2-mobile')
+const arrow2_2_mobile = document.querySelector('.arrow2-2-mobile')
 
 const company = document.querySelector('.company');
+const company2 = document.querySelector('.company2')
+const mobile2 = document.querySelector('.company-extension-mobile')
+
 const extension2 = document.querySelector('.company-extension');
 
 const tres_barra = document.querySelector('.tres-barra');
@@ -158,5 +163,34 @@ features2.addEventListener('click', function() {
             arrow1_1_mobile.classList.add('arrow1-1-mobile')
             arrow1_1_mobile.classList.remove('arrow1-2-mobile')
         }
+    }
+})
+
+company2.addEventListener('click', function() {
+    if (mobile2.classList.contains('company-extension-mobile')) {
+        mobile2.classList.remove('company-extension-mobile')
+        mobile2.classList.add('company-extension-mobile2')
+
+        if (arrow2_mobile.classList.contains('arrow-mobile2') && arrow2_2_mobile.classList.contains('arrow2-2-mobile')) {
+            arrow2_mobile.classList.remove('arrow-mobile2')
+            arrow2_mobile.classList.add('arrow-mobile3')
+            arrow2_2_mobile.classList.remove('arrow2-2-mobile')
+            arrow2_2_mobile.classList.add('arrow2-3-mobile')
+        }
+
+    } 
+
+    else if (mobile2.classList.contains('company-extension-mobile2')) {
+        mobile2.classList.add('company-extension-mobile')
+        mobile2.classList.remove('company-extension-mobile2')
+        
+        if (arrow2_mobile.classList.contains('arrow-mobile3') && arrow2_2_mobile.classList.contains('arrow2-3-mobile')) {
+            arrow2_mobile.classList.add('arrow-mobile2')
+            arrow2_mobile.classList.remove('arrow-mobile3')
+            arrow2_2_mobile.classList.add('arrow2-2-mobile')
+            arrow2_2_mobile.classList.remove('arrow2-3-mobile')
+        }
+
+    
     }
 })

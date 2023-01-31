@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;1,700&display=swap");
+.tapete {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: hsl(0deg, 0%, 98%);
+}
+
+.tapete2 {
+  height: 30px;
+  width: 50px;
+  background: hsl(0deg, 0%, 98%);
+  position: absolute;
+  bottom: 60%;
+  left: 29%;
+  z-index: 9;
+}
+
 .body {
   overflow-x: hidden;
   background: hsl(0deg, 0%, 98%);
@@ -464,36 +481,6 @@
     transition: 0.1s ease-in-out;
     display: none;
   }
-  .login {
-    position: absolute;
-    border: none;
-    border-radius: 30px;
-    background: hsl(0deg, 0%, 98%);
-    height: 40px;
-    width: 60px;
-    bottom: 93%;
-    left: 86%;
-    font-size: 17px;
-    cursor: pointer;
-    color: hsl(0deg, 0%, 41%);
-    transition: 0.1s ease-in-out;
-    display: none;
-  }
-  .register {
-    border-radius: 15px;
-    border: black solid 1px;
-    height: 40px;
-    width: 90px;
-    position: absolute;
-    bottom: 93%;
-    left: 92%;
-    background: hsl(0deg, 0%, 98%);
-    color: hsl(0deg, 0%, 41%);
-    font-size: 17px;
-    transition: 0.1s ease-in-out;
-    cursor: pointer;
-    display: none;
-  }
   .big {
     position: absolute;
     bottom: 9%;
@@ -853,6 +840,7 @@
     bottom: 60%;
     left: 29%;
     color: hsl(0deg, 0%, 41%);
+    z-index: 1;
   }
   .history:hover {
     color: hsl(0deg, 0%, 8%);
@@ -959,7 +947,7 @@
     right: 0%;
     visibility: hidden;
     bottom: 0%;
-    background: pink;
+    background: hsl(0deg, 0%, 98%);
     height: 100%;
     position: absolute;
     width: 0px;
@@ -969,7 +957,7 @@
     visibility: visible;
     right: 0%;
     bottom: 0%;
-    background: pink;
+    background: hsl(0deg, 0%, 98%);
     height: 100%;
     position: absolute;
     width: 230px;
@@ -1005,7 +993,7 @@
     left: 120%;
   }
   .features-extension-mobile {
-    visibility: hidden;
+    display: none;
     background: hsl(0deg, 0%, 98%);
     height: 150px;
     width: 160px;
@@ -1015,7 +1003,7 @@
     left: 13%;
   }
   .features-extension-mobile2 {
-    visibility: visible;
+    display: block;
     background: hsl(0deg, 0%, 98%);
     height: 150px;
     width: 160px;
@@ -1073,15 +1061,133 @@
     cursor: pointer;
   }
   .company2 {
-    display: grid;
-    background: gray;
+    bottom: -130px;
+    display: block;
     color: hsl(0deg, 0%, 41%);
     position: relative;
     left: 23px;
+    cursor: pointer;
+  }
+  .company-extension-mobile {
+    display: none;
+    background: hsl(0deg, 0%, 98%);
+    height: 150px;
+    width: 130px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -2px;
+    left: 1%;
+  }
+  .company-extension-mobile2 {
+    display: block;
+    background: hsl(0deg, 0%, 98%);
+    height: 150px;
+    width: 130px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    left: 1%;
   }
   .arrow-mobile2 {
-    position: absolute;
-    bottom: 20%;
+    position: relative;
+    bottom: 17px;
     left: 37%;
+  }
+  .arrow-mobile3 {
+    visibility: hidden;
+    position: relative;
+    bottom: 17px;
+    left: 37%;
+  }
+  .arrow2-2-mobile {
+    visibility: hidden;
+    position: relative;
+    bottom: 34px;
+    left: 37%;
+  }
+  .arrow2-3-mobile {
+    visibility: visible;
+    position: relative;
+    bottom: 34px;
+    left: 37%;
+  }
+  .history2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .our2 {
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    bottom: -60px;
+  }
+  .blog2 {
+    bottom: -66px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+  }
+  .careers-mobile {
+    position: relative;
+    color: hsl(0deg, 0%, 41%);
+    bottom: -110px;
+    left: 24px;
+  }
+  .about-mobile {
+    position: relative;
+    bottom: -125px;
+    left: 24px;
+    color: hsl(0deg, 0%, 41%);
+  }
+  .login2 {
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    background: hsl(0deg, 0%, 98%);
+    height: 40px;
+    width: 90px;
+    bottom: -150px;
+    left: 68px;
+    font-size: 17px;
+    cursor: pointer;
+    color: hsl(0deg, 0%, 41%);
+    transition: 0.1s ease-in-out;
+  }
+  .register3 {
+    border-radius: 10px;
+    border: black solid 1px;
+    height: 40px;
+    width: 180px;
+    position: relative;
+    bottom: -160px;
+    left: 20px;
+    background: hsl(0deg, 0%, 98%);
+    color: hsl(0deg, 0%, 41%);
+    font-size: 17px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+  }
+  .login2 {
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    background: hsl(0deg, 0%, 98%);
+    height: 40px;
+    width: 90px;
+    bottom: -150px;
+    left: 68px;
+    font-size: 17px;
+    cursor: pointer;
+    color: hsl(0deg, 0%, 41%);
+    transition: 0.1s ease-in-out;
+  }
+  .register {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .tapete2 {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
